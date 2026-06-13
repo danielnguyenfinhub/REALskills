@@ -134,6 +134,8 @@ This is built in to every layer of these skills:
 - [`/to-prd`](./skills/engineering/to-prd/SKILL.md) quizzes you about which modules you're touching before creating a PRD
 - [`/zoom-out`](./skills/engineering/zoom-out/SKILL.md) tells the agent to explain code in the context of the whole system
 
+And [`/review-diff`](./skills/engineering/review-diff/SKILL.md) is the per-change checkpoint: before you commit, it reviews the diff against the shared language and ADRs, catching shallow modules and complexity leaks while they're still one change instead of a thousand.
+
 And crucially, [`/improve-codebase-architecture`](./skills/engineering/improve-codebase-architecture/SKILL.md) helps you rescue a codebase that has become a ball of mud. I recommend running it on your codebase once every few days.
 
 ### Summary
@@ -156,6 +158,7 @@ Skills I use daily for code work.
 - **[to-prd](./skills/engineering/to-prd/SKILL.md)** — Turn the current conversation context into a PRD and submit it as a GitHub issue. No interview — just synthesizes what you've already discussed.
 - **[zoom-out](./skills/engineering/zoom-out/SKILL.md)** — Tell the agent to zoom out and give broader context or a higher-level perspective on an unfamiliar section of code.
 - **[prototype](./skills/engineering/prototype/SKILL.md)** — Build a throwaway prototype to flesh out a design — either a runnable terminal app for state/business-logic questions, or several radically different UI variations toggleable from one route.
+- **[review-diff](./skills/engineering/review-diff/SKILL.md)** — Disciplined self-review of the current change before it ships. Reads the diff against the domain model in `CONTEXT.md` and ADRs, judges correctness then design, and ranks findings by what blocks the commit.
 
 ### Productivity
 
