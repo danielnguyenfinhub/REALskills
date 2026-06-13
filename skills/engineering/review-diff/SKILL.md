@@ -9,6 +9,8 @@ A review is only useful if it catches what _you_ would miss. Your bias is that y
 
 Review your **own** change here. To review someone else's PR, the same phases apply — just point Phase 1 at their branch instead of the working tree.
 
+This skill judges **correctness and design** — is the code right, and is it well-built. For a **conformance** pass on a whole branch — does it follow the repo's documented standards and faithfully implement the originating issue/PRD — use `/review`, which runs those two axes as parallel sub-agents. The lenses are complementary; on a significant branch, run both.
+
 ## Phase 1 — Establish scope
 
 Get the exact diff under review. Don't review from memory of what you _intended_ to change.
